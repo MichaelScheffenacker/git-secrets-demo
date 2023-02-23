@@ -1,0 +1,4 @@
+echo "asdf" > passphrase.secret
+echo "very secret environment variables" > envscript.secret
+gpg --batch --passphrase-file passphrase.secret --symmetric envscript.secret
+gpg --batch --passphrase-file passphrase.secret --output envscript.secret --decrypt envscript.secret.gpg
