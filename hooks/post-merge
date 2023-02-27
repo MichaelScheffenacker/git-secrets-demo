@@ -1,1 +1,2 @@
 ./decryptsecret.sh
+echo "hello from post-merge"
