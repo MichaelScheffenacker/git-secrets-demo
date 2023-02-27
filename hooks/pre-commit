@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! git diff --cached --name-only --quiet envscript.secret # 0 is true in bash
+if ! git diff --cached --name-only --quiet env.secret # 0 is true in bash
 then
     ./hooks/encryptandaddsecret.sh
 fi
