@@ -1,1 +1,1 @@
-gpg --batch --yes --passphrase-file passphrase.secret --output envscript.secret --decrypt envscript.secret.gpg
+gpg --batch --yes --passphrase-file passphrase.secret --output env.secret --decrypt env.secret.gpg
