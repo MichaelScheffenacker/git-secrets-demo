@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if gpg --batch --yes --passphrase-file passphrase.secret --output - --decrypt env.secret.gpg | diff env.secret -  # 0 is true in bash
+if ! gpg --batch --yes --passphrase-file passphrase.secret --output - --decrypt env.secret.gpg | diff env.secret -  # 0 is true in bash
 then
     ./hooks/encryptandaddsecret.sh
 fi
