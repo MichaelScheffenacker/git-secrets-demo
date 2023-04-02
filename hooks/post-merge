@@ -1,1 +1,1 @@
-./decryptsecret.sh
+./hooks/decryptsecret.sh
